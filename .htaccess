@@ -1,0 +1,6 @@
+RewriteEngine On 
+# mở chế độ viết lại
+# để file ở trước thì chạy trước
+RewriteRule ^trang-chu$ index.php
+#dấu cộng là bắt buộc trong chuỗi phải có 1 trong những chuỗi
+RewriteRule ^([0-9a-zA-Z-()]+)$ indexDetail.php?url=$1
